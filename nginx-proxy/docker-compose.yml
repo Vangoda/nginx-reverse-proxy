@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  nginx-proxy:
+    image: nginx:alpine
+    container_name: nginx-proxy
+    restart: unless-stopped
+    volumes:
+      - ./nginx-data/certs:/etc/nginx/certs
+      - ./nginx-data/conf.d:/etc/nginx/conf.d
+    networks:
+      - nginx-proxy
+
+networks:
+  nginx-proxy:
+    external: true
