@@ -1,2 +1,4 @@
-*/nginx-data/*
-nginx-proxy-auto/nginx-data/conf.d/default.conf
+*/nginx-data/certs
+*/nginx-data/html
+*/nginx-data/vhost.d
+*/nginx-data/conf.d/default.conf
