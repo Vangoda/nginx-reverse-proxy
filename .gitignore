@@ -2,3 +2,4 @@
 */nginx-data/html
 */nginx-data/vhost.d
 */nginx-data/conf.d/default.conf
+nginx-proxy-auto/nginx-data/conf.d/default.conf
