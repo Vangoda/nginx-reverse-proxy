@@ -1,8 +1,8 @@
-version: '3.9'
+version: "3.9"
 
 services:
   nginx-proxy:
-    image: vangoda/nginx-proxy-auto:1.2-alpine
+    image: vangoda/nginx-proxy-auto:1.3-alpine
     container_name: nginx-proxy
     restart: unless-stopped
     ports:
