@@ -7,8 +7,8 @@ then
 fi
 
 DOMAIN=$1
-CERT_DIR="nginx-data/certs/"
-ROOT_CA="VanPredatorCA"
+CERT_DIR="/home/vangoda/Docker/nginx-reverse-proxy/nginx-proxy-auto/nginx-data/certs/"
+ROOT_CA="ca"
 
 cd ~/certs
 
