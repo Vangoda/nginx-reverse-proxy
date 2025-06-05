@@ -10,5 +10,10 @@ Važno!
 Da bi skripte radile struktura foldera mora biti sljedeća:
 ./nginx-data/certs/
 Sve skripte i certifikati trebaju biti u tom folderu.
+
 Skripti za generiranje SSL certifikata treba dati domenu kao parametar, npr.:
-  generate_ssl_cert.sh domena.hr
+  generate_ssl_cert.sh projekt1.hr
+
+Po generiranju SSL certifikata, ako se koristi VITE dev server(ako neznaš vjerojatno se koristi) generirane datoteke treba kopirati u folder "ssl" u rootu Docker mape(npr. ~/Docker/laravel/projekt1/ssl) te istu treba zamapirati u sami container u root html foldera(npr. /var/www/html/ssl).
+Na taj način će certifikat biti dostupan VITE (vite.config.js mora imati složenu konfiguraciju za SSL).
+Skripta ne kopira jer ne može biti sigurna treba li kopirati, niti gdje.
