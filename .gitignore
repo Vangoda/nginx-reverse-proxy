@@ -1,7 +1,7 @@
-*/nginx-data/certs
+*/nginx-data/certs/*
+!*/nginx-data/certs/*.sh
+!*/nginx-data/certs/*.txt
+
 */nginx-data/html
 */nginx-data/vhost.d
 */nginx-data/conf.d/default.conf
-nginx-proxy-auto/nginx-data/conf.d/default.conf
-nginx-proxy-auto/nginx-data/conf.d/default.conf
-nginx-proxy-auto/nginx-data/conf.d/default.conf

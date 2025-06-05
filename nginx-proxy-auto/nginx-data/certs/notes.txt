@@ -1,0 +1,14 @@
+Ovdje se generiraju SSL certifikati.
+rootCA.key i rootCA.pem su root certifikati, treba ih importati.
+Postoje skripte za
+- Generiranje rootCA ključa i certifikata
+- Generiranje SSL certifikata za specifičnu domenu
+- Importatiranje rootCA za Linux (Chrome)
+- Importatiranje rootCA za Windows
+
+Važno!
+Da bi skripte radile struktura foldera mora biti sljedeća:
+./nginx-data/certs/
+Sve skripte i certifikati trebaju biti u tom folderu.
+Skripti za generiranje SSL certifikata treba dati domenu kao parametar, npr.:
+  generate_ssl_cert.sh domena.hr

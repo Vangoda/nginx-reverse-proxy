@@ -1,3 +1,5 @@
 https://deliciousbrains.com/ssl-certificate-authority-for-local-https-development/
 https://github.com/nginx-proxy/nginx-proxy
 https://bbs.archlinux.org/viewtopic.php?id=273097
+
+Skripte za generiranje SSL certifikata su u nginx-data/certs.
