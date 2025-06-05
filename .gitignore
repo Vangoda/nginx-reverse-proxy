@@ -1,6 +1,7 @@
 */nginx-data/certs/*
 !*/nginx-data/certs/*.sh
 !*/nginx-data/certs/*.txt
+!*/nginx-data/certs/*.ps1
 
 */nginx-data/html
 */nginx-data/vhost.d

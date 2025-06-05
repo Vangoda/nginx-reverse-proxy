@@ -14,6 +14,15 @@ Sve skripte i certifikati trebaju biti u tom folderu.
 Skripti za generiranje SSL certifikata treba dati domenu kao parametar, npr.:
   generate_ssl_cert.sh projekt1.hr
 
+Upute za Linux import:
+chmod +x trust_root_ca_linux.sh
+./trust_root_ca_linux.sh /path/to/rootCA.pem
+
+Upute za Windows import:
+(Iz administrativnog cmd-a ili powershella)
+.\trust_root_ca_windows.ps1 -RootCAPath "C:\\path\\to\\rootCA.pem"
+
+
 Po generiranju SSL certifikata, ako se koristi VITE dev server(ako neznaš vjerojatno se koristi) generirane datoteke treba kopirati u folder "ssl" u rootu Docker mape(npr. ~/Docker/laravel/projekt1/ssl) te istu treba zamapirati u sami container u root html foldera(npr. /var/www/html/ssl).
 Na taj način će certifikat biti dostupan VITE (vite.config.js mora imati složenu konfiguraciju za SSL).
 Skripta ne kopira jer ne može biti sigurna treba li kopirati, niti gdje.
