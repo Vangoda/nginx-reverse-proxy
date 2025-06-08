@@ -1,5 +1,3 @@
-version: "3.9"
-
 services:
   nginx-proxy:
     image: vangoda/nginx-proxy-auto:1.3-alpine
