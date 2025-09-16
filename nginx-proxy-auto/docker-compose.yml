@@ -14,6 +14,8 @@ services:
       - /var/run/docker.sock:/tmp/docker.sock:ro
     networks:
       - nginx-proxy
+    environment:
+      - ENABLE_HTTP2=false
   # nginx-letsencrypt:
   #   image: jrcs/letsencrypt-nginx-proxy-companion
   #   container_name: nginx-letsencrypt
