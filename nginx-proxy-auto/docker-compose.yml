@@ -1,6 +1,7 @@
 services:
   nginx-proxy:
-    image: vangoda/nginx-proxy-auto:1.3-alpine
+    # image: vangoda/nginx-proxy-auto:1.3-alpine
+    image: jwilder/nginx-proxy:alpine
     container_name: nginx-proxy
     restart: unless-stopped
     ports:
